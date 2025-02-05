@@ -116,3 +116,6 @@ Note: Remember to change the camera lense focus by twisting the physical lense o
 ### 4.0 PhotonVision debugging
 1. If the ip addresses for the cameras are inadvertantly overwritten, perform a software factory reset in the settings tab of the PhotobnVision software. Afterwards, the static ip must be reconfigured
 2. Cameras must all be on the same version of the PhotonVision
+### 5.0 Ambiguity
+1. The ambiguity metric is calculated based on the a ratio between the differences of the two (max) possible values taken from the camera
+2. A lower ambiguity generally correlates to accurate returned data
