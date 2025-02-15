@@ -67,7 +67,7 @@ Spacebar can get jammed down
 3. Redeploy code
 
 ## CAN and [CANIvore](https://v6.docs.ctr-electronics.com/en/2024/docs/canivore/canivore-intro.html#canivore-intro) Issues
-### 1.0 Update CANivore firmware
+### 1.0 Update CANivore Firmware
 1. Click the menu button in the top left of Phoenix tuner
 2. Click into the CANivores tab
 3. Update the CANivore
@@ -80,16 +80,16 @@ Spacebar can get jammed down
 4. Redeploy code and check in Phoenix tuner if the motor's stator current limit has been set back to a small value
 5. If the value has been reset, find the line of code that is applying that value as a constant and change it to 120 amps (or whatever current limit it should be)
 
-## roboRIO
+## RoboRIO
 ### 1.0 Flashing [roboRIO 2.0](https://www.ni.com/docs/en-US/bundle/roborio-20-umanual/page/umanual.html) firmware
 1. Find either a USB-A to MicroSD adapter or a SD to MicroSD adapter
 2. Take the MicroSD Card from the roboRIO
 3. 
 4. Read [FRC Official docs](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-3/roborio2-imaging.html) if more thourough documentation is needed
-### 2.0 View roboRIO connection and power logs
+### 2.0 View roboRIO Connection and Power Logs
 1. Click the gear icon next to the team number in FRC Driver Station
 2. Click view log file
-### 3.0 Delete roboRIO logs to create disk space
+### 3.0 Delete RoboRIO Logs to Free Disk Space
 1. Navigate to the log extractor tool in the tools tab of Phoenix Tuner X
 2. Press connect while connected to the robot
 3. Select any logs that need to be downloaded or deleted
@@ -99,21 +99,23 @@ Spacebar can get jammed down
 1. Call swerve.resetModuleToAbsolute() (or equivalent method) twice at the top of RobotContainer
 
 ## Vision
-### 1.0 Coprocessor networking configuration for [PhotonVision](https://docs.photonvision.org/en/latest/) 
+### 1.0 Coprocessor Networking Configuration for [PhotonVision](https://docs.photonvision.org/en/latest/) 
 Note: Step order is very important
 1. Set the static IP in the networking tab of Photonvision to 10.TE.AM.11 (for team #5804: 10.58.04.11)
 2. Set the static IP for the RoboRIO to the default static IP
 3. Power cycle the robot
 4. Access the camera configuration settings at 10.TE.AM.11:5800 (for team #5804: 10.58.04.11:5800)
 5. Read the [PhotonVision docs](https://docs.photonvision.org/en/latest/docs/quick-start/networking.html#networking) if more thourough documentation is needed
-### 2.0 PhotonVision camera calibration
+### 2.0 PhotonVision Camera Calibration
 Note: Remember to change the camera lense focus by twisting the physical lense of the ArduCam. Do not use auto-exposure.
 1. The maximum distance that an AprilTag can be detected at improves with higher resolution; however, increasing resolution has the negative side effect of lowering the framerate
 2. When calibrating the camera, the chessboard/charuco must be held close to the camera in order for it to be detected at lower resolutions
-### 3.0 Exporting pipeline settings
+
+// Note: Move to vision tests
+### 3.0 Exporting Pipeline Settings
 1. There is currently not possible to export only pipeline settings
 2. Using the export settings button in the settings tab includes the ip address, and the cameras will not work share ip addresses
-### 4.0 PhotonVision debugging
+### 4.0 PhotonVision Debugging
 1. If the ip addresses for the cameras are inadvertantly overwritten, perform a software factory reset in the settings tab of the PhotobnVision software. Afterwards, the static ip must be reconfigured
 2. Cameras must all be on the same version of the PhotonVision
 ### 5.0 Ambiguity
