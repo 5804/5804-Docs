@@ -113,8 +113,12 @@ Note: Remember to change the camera lense focus by twisting the physical lense o
 
 // Todo: Move some of this stuff to vision tests
 ### 3.0 Exporting Pipeline Settings // Todo: update on how to apply them to all cameras
-1. There is currently not possible to export only pipeline settings
-2. Using the export settings button in the settings tab includes the ip address, and the cameras will not work share ip addresses
+1. Press the export all settings button of the camera you want to copy from in PhotonVision
+2. Unplug all wires going from the network switch to the coprocessor except for the pi you want to configure
+3. Press the import all settings button in PhotonVision tab for the pi you want to configure
+4. Rename the camera to the corresponding direction it faces, reset the ip address of the coprocessor, and reset the name of the coprocessor
+5. Rewire the coprocessors that were unplugged in step 2
+
 ### 4.0 PhotonVision Debugging
 1. If the ip addresses for the cameras are inadvertantly overwritten, perform a software factory reset in the settings tab of the PhotobnVision software. Afterwards, the static ip must be reconfigured
 2. Cameras must all be on the same version of the PhotonVision
