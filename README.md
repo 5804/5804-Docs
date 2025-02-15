@@ -111,8 +111,8 @@ Note: Remember to change the camera lense focus by twisting the physical lense o
 1. The maximum distance that an AprilTag can be detected at improves with higher resolution; however, increasing resolution has the negative side effect of lowering the framerate
 2. When calibrating the camera, the chessboard/charuco must be held close to the camera in order for it to be detected at lower resolutions
 
-// Note: Move to vision tests
-### 3.0 Exporting Pipeline Settings
+// Todo: Move some of this stuff to vision tests
+### 3.0 Exporting Pipeline Settings // Todo: update on how to apply them to all cameras
 1. There is currently not possible to export only pipeline settings
 2. Using the export settings button in the settings tab includes the ip address, and the cameras will not work share ip addresses
 ### 4.0 PhotonVision Debugging
