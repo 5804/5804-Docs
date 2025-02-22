@@ -1,5 +1,5 @@
 # 5804-Docs
-Documentation for troubleshooting issues with FRC robots
+FRC Software Troubleshooting Document
 
 ## Table of Contents
 1. [Hardware Info](#hardware-info)
