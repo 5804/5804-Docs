@@ -1,5 +1,5 @@
 # 5804-Docs
-FRC Software Troubleshooting Document
+FRC Software Troubleshooting Document.
 
 ## Table of Contents
 1. [Hardware Info](#hardware-info)
